@@ -14,8 +14,9 @@ dist-ssr
 
 # Environment Variables - keep secrets safe!
 .env
-.env.local
-.env.production
+.env.*
+!.env.example
+!.env.*.example
 
 # Editor directories and files
 .vscode/*
