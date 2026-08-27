@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Review panel — pulsing red glow border */
+@keyframes review-glow {
+  0%, 100% {
+    box-shadow: 0 0 0px 0px rgba(220, 38, 38, 0);
+    border-color: rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(220, 38, 38, 0.35);
+    border-color: rgba(220, 38, 38, 0.8);
+  }
+}
+
+/* Review form — fade + slide up on mount */
+@keyframes review-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.review-highlight {
+  animation: review-glow 2.5s ease-in-out infinite;
+}
+
+.review-form-enter {
+  animation: review-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+#club,
+#team,
+#pricing,
+#gallery,
+#contact {
+  scroll-margin-top: 90px;
+}

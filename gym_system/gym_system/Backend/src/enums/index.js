@@ -1,0 +1,10 @@
+export const ROLE_ENUM = ["client", "trainer", "admin"];
+export const GENDER_ENUM = ["male", "female", "other"];
+export const GOAL_ENUM = ["weight_loss", "muscle_gain", "fitness"];
+export const ACTIVITY_LEVEL_ENUM = ["beginner", "intermediate", "advanced"];
+export const MEMBERSHIP_STATUS_ENUM = ["active", "expired"];
+export const PAYMENT_TYPE_ENUM = ["paypal", "card", "bank_transfer", "payhere"];
+export const PAYMENT_STATUS_ENUM = ["pending", "completed"];
+export const ORDER_STATUS_ENUM = ["pending", "shipped", "delivered"];
+export const ORDER_PAYMENT_STATUS_ENUM = ["pending", "paid"];
+export const SHIPPING_STATUS_ENUM = ["pending", "shipped", "delivered"];
