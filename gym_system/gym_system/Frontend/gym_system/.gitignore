@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # Environment Variables - keep secrets safe!
-env
+.env
 .env.local
 .env.production
 
